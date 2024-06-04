@@ -33,7 +33,7 @@
     position: relative;
 }
 
-.news-container ul li::after {
+.news-container ul li:nth-last-child(n+2)::after {
     content:"";
     width: 1px;
     height: 100%;
@@ -43,9 +43,7 @@
     right: 0;
 }
 
-.news-container ul li:last-child::after {
-    display: none;
-}
+
 
 @keyframes scroll {
     from {
